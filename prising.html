@@ -36,7 +36,7 @@
     <link href="assets/css/revolution/layers.css" rel="stylesheet" type="text/css">
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link href="assets/css/revolution/navigation.css" rel="stylesheet" type="text/css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/main.css">
@@ -50,18 +50,139 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 -->
 
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+
+.prising_table {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 140px 0;
+}
+.card {
+	position: relative;
+	max-width: 300px;
+	height: auto;
+	border-radius: 40px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2), 0 20px 50px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+	overflow: hidden;
+}
+.card:hover {
+	transform: scale(1.1);
+}
+.col-sm-4:nth-child(1) .card,
+.col-sm-4:nth-child(1) .card .title .fa-telegram-plane {
+	background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.col-sm-4:nth-child(2) .card,
+.col-sm-4:nth-child(2) .card .title .fas {
+	background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.col-sm-4:nth-child(3) .card {
+	background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+.card:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: rgba(255, 255, 255, 0.1);
+	z-index: 1;
+	transform: skewY(-5deg) scale(1.3);
+}
+.title .fa-telegram-plane {
+	color: #fff;
+	font-size: 60px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.title .fas {
+	color: #fff;
+	font-size: 60px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.title h2 {
+	position: relative;
+	margin: 20px 0 0;
+	padding: 0;
+	color: #fff;
+	font-size: 28px;
+	z-index: 2;
+}
+.price {
+	position: relative;
+	z-index: 2;
+}
+.price h4 {
+	margin: 0;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 60px;
+}
+.option {
+	position: relative;
+	z-index: 2;
+}
+.option ul {
+	margin: 0;
+	padding: 0;
+}
+.option ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #fff;
+	font-size: 16px;
+    text-align: left;
+}
+.card a {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border-radius: 40px;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	margin: 20px auto 0;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cord a:hover {
+	text-decoration: none;
+}
+
+    </style>
+  
 </head>
 
 <body>
     <!-- HEADER -->
-    <header id="header" class="header">
+        <header id="header" class="header">
         <!-- TOP BAR -->
         <div class="top-bar bg-gray-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
                         <p>
-                            Follow our social media pages for trading
+                            Live Feeds
                         </p>
                     </div>
                     <div class="col-sm-3">
@@ -149,57 +270,47 @@
                     <ul class="nav navbar-nav navbar-left">
                         <li class="current"><a href="index.html">HOME <span class="sr-only">(current)</span></a>
                         </li>
-                        <li><a href="#">KNOW US</a>
+                        <li><a>KNOW US</a>
                             <ul>
-                                <li><a href="about-us.html">ABOUT US</a></li>
-                                <li><a href="#">WHY US</a></li>
-                                <li><a href="#">VISION</a></li>
+
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="testimonials.html">Testimonial</a></li>
                             </ul>
+
                         </li>
                         <li><a href="#">SERVICES</a>
                             <ul>
                                 <li><a href="stocksAdvisory.html">Stock Advisory</a></li>
                                 <li><a href="intraday.html">Intraday Trading</a></li>
-                                <li><a href="#">Portfolio Management</a></li>
-                                <li><a href="#"> Sub-Brokrage </a></li>
-                                <li><a href="#">Mutual Funds</a></li>
-                                <li><a href="#">Wealth Management</a>
+                                <li><a href="Portfolio.html">Portfolio Management</a></li>
+                                <li><a href="wealth.html">Wealth Management</a>
                                     <ul>
-                                        <li><a href="#">Bonds</a></li>
-                                        <li><a href="#">Insurance Advisory</a></li>
-                                        <li><a href="#">Investment</a></li>
+                                        <li><a href="bond.html">Bonds</a></li>
+                                        <li><a href="insurance.html">Insurance Advisory</a></li>
+                                        <li><a href="#">Loans</a>
                                     </ul>
-                                </li>
+                                    </li>
+
+                                    <li><a href="Mutual.html">Mutual Funds</a></li>
+                                    <li><a href="brokerage.html"> Sub-Brokrage </a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Products</a>
-                            <ul>
+                            </li>
+                            <li><a href="prising.html">Prising</a>
 
-                                <li><a href="#">Mutual Funds</a></li>
-                                <li><a href="#">Bonds</a></li>
-                                <li><a href="#">Loans</a>
-                                </li>
+                            </li>
+                            <li><a href="#">Our Performance</a>
 
-                            </ul>
-                        </li>
+                            </li>
+                            <li><a href="contact-3.html">Contact Us</a>
 
-                        <li><a href="#">More</a>
-                            <ul>
+                            </li>
 
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Portfolio</a>
-                                </li>
+                            <li><a href="faq.html">FAQ</a>
 
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Contact</a>
-
-                        </li>
+                            </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right mrg-right-minus-30 display-none">
-                        <li class="bg-blue-drak"><a href="#">Subscription</a></li>
+                        <li class="bg-blue-drak"><a href="#">Free Trial</a></li>
                     </ul>
                 </div>
             </div>
@@ -214,10 +325,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Why Us</li>
+                            <li><a href="#">Price Is What You Pay</a></li>
+                            <li class="active">Value Is What You Get</li>
                         </ol>
-                        <h2>Why StocksMaven</h2>
+                        <h2>- W.Buffett</h2>
                     </div>
                 </div>
             </div>
@@ -237,50 +348,144 @@
 
 
 
+<section class="prising_table">
+
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center" >
+							<div class="title">
+								<i class="fab fa-telegram-plane"></i>
+								<h2>Intraday Cash Tips</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>3000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center">
+							<div class="title">
+								<i class="fas fa-plane"></i>
+								<h2>Pro</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>4000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center">
+							<div class="title">
+								<i class="fas fa-rocket"></i>
+								<h2>Ultimate</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>3000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+				</div>
+						<div class="row">
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center" >
+							<div class="title">
+								<i class="fab fa-telegram-plane"></i>
+								<h2>Basic</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>5000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center">
+							<div class="title">
+								<i class="fas fa-plane"></i>
+								<h2>Pro</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>6000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+					<div class="col-sm-4" style="padding-top:60px">
+						<div class="card text-center">
+							<div class="title">
+								<i class="fas fa-rocket"></i>
+								<h2>Ultimate</h2>
+							</div>
+							<div class="price">
+								<h4> <sup>&#8377</sup>7000</h4>
+							</div>
+							<div class="option">
+								<ul>
+									<li><i class="fas fa-check"></i> Daily 2 calls</li>
+									<li><i class="fas fa-check"></i> SMS serice</li>
+									<li><i class="fas fa-check"></i> Chatroom</li>
+									<li><i class="fas fa-times"></i> one to one talk to Mr. Ankur</li>
+								</ul>
+							</div>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
 
 
 
 
-
-
-
-        <!-- Why us -->
-        <div class="why-us">
-
-            <div class="row why_us_row why_us_row1">
-                <div class="col-md-4" >
-                    <h2> personalized investment planning </h2>
-                    <p>"you name it and we have it" We cater to your specific needs by providing viable solutions which help in fulfilling all your goods. </p>
-                </div>
-                <div class="col-md-4 ">
-                    <h2> "You are our Priority" </h2>
-                    <p>We aspire to outperfomm ourselves each and every day so as to offer outstanding services to you. By means of innovation and expertise, we constantly update ourselves in terms of technology and processes to enhance your trading experience. </p>
-                </div>
-                <div class="col-md-4 check">
-                    <h2>Embracing Technology</h2>
-                    <p>with world class smart trading platforms that are fast and efficient, your trading becomes seamless and hassle free. Mobile app helps you trade without any difficulty anywhere anytime. </p>
-                </div>
-            </div>
-            <div class="row why_us_row why_us_row2 ">
-                <div class="col-md-4">
-                    <h2>markets at your finger tips </h2>
-                    <p> you will never be away from markets! get all relevat market sata all the time. </p>
-                </div>
-                <div class="col-md-4">
-                    <h2>experts view </h2>
-                    <p>our reports and recommendations backed by strong research experts guide you in your investment journey. </p>
-                </div>
-                <div class="col-md-4 check">
-                    <h2>always within reach</h2>
-                    <p>with pan india presence, we are always near you to provide feasible investment solutions.
-                    </p>
-                </div>
-            </div>
-
-       
-        </div>
-
-        <!--Why us -->
+        
+        <!--prising-->
 
 
 
@@ -377,12 +582,10 @@
                         <div class="row">
                             <div class="col-md-7 col-md-push-5">
                                 <ul class="footer-menu text-right">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Testimonial</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Privacy policy</a></li>
+                                    <li><a href="#">Refund policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-5 col-md-pull-7">
