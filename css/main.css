@@ -427,6 +427,116 @@ blockquote small {
     background-image: url(../images/background/7.jpg)
 }
 
+/********** Backgrounds **********/
+
+
+
+.modal-body{
+  background: #faf5f3;
+  font-family: 'Lato', sans-serif;
+  height: 90vh;
+ 
+}
+
+
+.popup_form > form {
+ 
+
+  z-index: 10;
+  padding: 60px 60px 80px;
+
+  opacity: 0.85;
+}
+.popup_form > form h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  color: #2f1f1e;
+  letter-spacing: 0.061em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.popup_form > form input {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: none;
+  appearance: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #ebd7cf;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  font-size: 11px;
+  position: relative;
+  z-index: 500;
+  letter-spacing: 0.06em;
+}
+.popup_form > form input:focus {
+  border: 1px solid #ebd7cf;
+  outline: none;
+  appearance: none;
+}
+.popup_form > form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.popup_form > form .submit {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  position: relative;
+  z-index: 500;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  background: #ec7242;
+  color: #fff;
+  width: 101%;
+  transition: 0.8s all ease;
+}
+.popup_form > form .submit:hover {
+  background: #d6673c;
+  transform: translateY(1px);
+  transition: 0.4s all ease;
+}
+
+#firstname {
+  margin-top: 20px;
+}
+
+.circle {
+  padding: 15px;
+  height: 56px;
+  width: 55px;
+ position: absolute;
+    top: 15%;
+    left: 50%;
+  z-index: 20;
+  border-radius: 50%;
+  clear: both;
+  opacity: 0.8;
+    transform: translate(-50%, -50%);
+}
+.close_button{
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    color: #ec1e07ad;
+    cursor: pointer;
+    
+}
+.circle-quill {
+  border: 1px solid #ebd7cf;
+  background: #fff;
+}
+
 
 /********** 1-5 FIXED PADDING **********/
 

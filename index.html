@@ -46,8 +46,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js" ></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=5"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -211,7 +213,7 @@
                             </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right mrg-right-minus-30 display-none">
-                        <li class="bg-blue-drak"><a href="#">Free Trial</a></li>
+                        <li class="bg-blue-drak"><a data-toggle="modal" data-target="#myModal">Free Trial</a></li>
                     </ul>
                 </div>
             </div>
@@ -294,13 +296,58 @@
                         <h3 class="color-white">GET A FREE TRIAL FOR INTRADAY TIPS</h3>
                     </div>
                     <div class="col-md-2 col-sm-12 text-right res-center res-mrg-top-20">
-                        <a href="#" class="btn btn-default">Free Trial</a>
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal">Free Trial</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+  
+   
+    <div class="popup_form">
+<form class="sub-form">
+  <div class="input-contain">
+    <div class="circle circle-quill">
+      <svg class="quill" x="0px" y="0px"
+      width="25.167px" height="25.167px" viewBox="0 0 25.167 25.167" enable-background="new 0 0 25.167 25.167" xml:space="preserve">
+      <path fill="#4e3332" d="M0,25C3.125,15.625,11.304,0,25,0c-6.421,5.151-9.375,17.188-14.062,17.188s-4.688,0-4.688,0L1.562,25H0z"/>
+      </svg>
+    </div>
+  
+    <div class="close_button" data-dismiss="modal"> <i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+    <h2 class="info">Try Our Free Trial</h2>
+   
+    <input type="text" id="firstname" name="firstname" placeholder="full name" required maxlength="100" />
+    <input type="email" placeholder="email" name="email" required="required" />
+    <input type="tel" placeholder="Number" name="number" required="required" />
+    
+    <div class="allsub">
+      <div class="submit" id="submit_modal">Contact Us Today</div>
+      
+    </div><!--allsub-->
+  
+ 
+ </div><!--input-contain-->
+
+</form>
+</div>
+
+
+
+     
+      </div>
+    
+    </div>
+  </div>
+</div>
+        
+        
 
         <div class="parallax1">
 
@@ -941,7 +988,32 @@
 
 
     <!-- JQUERY -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script> 
+    
+    <script>
+function myFunction() {
+    setTimeout(function(){ alert("Hello"); }, 3000);
+}
+</script>
+    
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        setTimeout(function(){
+        $('#myModal').modal('show');   
+        },5000);
+    });
+        
+</script>
+   
+    <script type="text/javascript">
+     $("#submit_modal").click(function(){
+     $('#myModal').modal('hide'); 
+});
+        
+</script>
+  
+  
+   
 
     <!-- EASING -->
     <script src="js/jquery.easing.min.js"></script>
