@@ -42,11 +42,18 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	
-	<!-- Favicon -->
+   <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+
+	
+<!--
+	
+	 Favicon 
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
 
 </head>
 <body>
@@ -260,31 +267,31 @@
 					</div>
 					<div class="col-md-6 res-mrg-md-top-50">
 						<h3 class="heading color-black mrg-bottom-30 res-md-center">SAY HELLO !</h3>
-						<form action="#">
+						<form id="contact_us_form">
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-6 res-mrg-md-bottom-20">
-										<input type="text" class="form-control" name="username" placeholder="Name">
+										<input type="text" class="form-control" id="contact_name" name="username" placeholder="Name">
 									</div>
 									<div class="col-md-6">
-										<input type="email" class="form-control" name="email" placeholder="Email">
+										<input type="email" class="form-control" id="contact_email" name="email" placeholder="Email">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-6 res-mrg-md-bottom-20">
-										<input type="text" class="form-control" name="phone" placeholder="Phone">
+										<input type="text" class="form-control" id="contact_phone" name="phone" placeholder="Phone">
 									</div>
 									<div class="col-md-6">
-										<input type="text" class="form-control" name="subject" placeholder="Subject">
+										<input type="text" class="form-control" id="contact_subject" name="subject" placeholder="Subject">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<textarea name="message" placeholder="Message" rows="3"></textarea>	
+								<textarea  id="contact_text" name="message" placeholder="Message" rows="3"></textarea>	
 							</div>
-							<input type="button" class="btn btn-default btn-blue btn-larze btn-center-md" value="SUBMIT">
+							<input type="button" id="contact_submit" class="btn btn-default btn-blue btn-larze btn-center-md" value="SUBMIT">
 							
 						</form>
 					</div>
@@ -456,6 +463,8 @@
 	
 	<!-- CUSTOM JS -->
 	<script src="js/custom.js"></script>
+	<script src="js/script.js"></script>
+	
 	<script type="text/javascript">
 	   $('.map').gmap3({
 		map:{

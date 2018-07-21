@@ -384,48 +384,97 @@ blockquote small {
 
 /********** Parallax **********/
 .parallax1{
+   height: 79vh;
     width: 100%;
-    height: 80vh;
-    background-image: url(../images/slider/10.jpg);
+    background-image: url(../images/slider/3-min.jpg);
+    background-size: cover;
     background-attachment: fixed;
+    
 }
+
+/*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+
 .parallax2{
     width: 100%;
     height: 80vh;
-    background-image: url(../images/slider/9.jpg);
+    background-image: url(../images/slider/11-min.jpg);
+    background-size: cover;
     background-attachment: fixed;
+    background-position:  left top;
+   
+
 }
 .parallax3{
     width: 100%;
     height: 80vh;
-    background-image: url(../images/slider/18.jpg);
+/*
+    background-image: url(../images/slider/14-min.jpg);
     background-attachment: fixed;
+*/
+    
+    background: url(../images/slider/14-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
 }
 
 
 /********** Backgrounds **********/
 .intraday-bg{
-  background-image: url(../images/background/5.jpg);  
+     background-attachment: fixed;
+     background-image: url(../images/background/3-min.jpg);  
 }
 
 .stockAdvisory-bg{
-    background-image: url(../images/background/6.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     background-image: url(../images/background/6.jpg);
 }
 
 .Portfolio-bg{
+    background-attachment: fixed;
+    background-size: cover;
     background-image: url(../images/background/10.jpg);
     background-position: right;
 }
 .wealth-bg{
+     background-attachment: fixed;
+    background-size: cover;
     background-image: url(../images/background/2.jpg)
 }
 .mutual-bg{
-    background-image: url(../images/background/8.jpg);
+    background-image: url(../images/background/9-min.jpg);
+     background-attachment: fixed;
+    background-size: cover;
     
 }
 .bonds-bg{
-    background-image: url(../images/background/7.jpg)
+    background-image: url(../images/background/10-min.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
+.about-us-bg {
+    background-image: url(../images/background/5-min.jpg);
+     background-attachment: fixed;
+    background-size: cover;
+}
+
+.insurance-bg{
+    background-image: url(../images/background/6-min.jpg);
+     background-attachment: fixed;
+    background-size: cover;
+}
+.loan-bg{
+    background-image: url(../images/background/7-min.jpg);
+     background-attachment: fixed;
+    background-size: cover;
+}
+.test-bg{
+    background-image: url(../images/background/13-min.jpg);
+     background-attachment: fixed;
+    background-size: cover;
+}
+
 
 /********** Backgrounds **********/
 
@@ -982,9 +1031,6 @@ margin-top: 10px;
     background-position: center;
 }
 
-.about-us-bg {
-    background-image: url('../images/background/02.jpg');
-}
 
 /********** 1.12 BANNER **********/
 
