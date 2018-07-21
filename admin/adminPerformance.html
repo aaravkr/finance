@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from Resto-G.com/finance+/contact-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Jun 2018 12:27:54 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>StocksMaven - Stock Advisory services</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+    <style>
+        .form_design {
+            margin: 30px auto;
+        }
+        
+        .end_form_display_button{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container form_design">
+        <form class="form-horizontal" id="performance_admin_form">
+            <div class="form-group">
+                <label for="serial_No" class="col-sm-2 control-label">serial No.</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="serial_No" placeholder="Serial Number" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Entry_Date" class="col-sm-2 control-label">Entry Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="Entry_Date" placeholder="entry Date" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="script" class="col-sm-2 control-label">Script</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="script" placeholder="Script Name" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Entry_Price" class="col-sm-2 control-label">Recomm. Price</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="Entry_Price" placeholder="Recommened Price" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Stop_loss" class="col-sm-2 control-label">Stop Loss</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="Stop_loss" placeholder="Stop Loss" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Target" class="col-sm-2 control-label">Target</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="Target" placeholder="Target">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="AbsReturn" class="col-sm-2 control-label">Absolute Return %</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="AbsReturn" placeholder="Absolute return %">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Call_close" class="col-sm-2 control-label">Call Close Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="Call_close" placeholder="Call Close Date">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Call_status" class="col-sm-2 control-label">Call Status</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Call_status" placeholder="Call Status">
+                </div>
+            </div>
+
+   
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" id="performance_button" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+        
+       <button type="button" class="btn btn-primary btn-lg btn-block end_form_display_button" id="end_form_display_button">Submitted</button>
+
+
+     
+    </div>
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
